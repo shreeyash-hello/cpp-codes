@@ -1,23 +1,36 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
-class calculator {
-public:
-	int add() {
-		int a = 10,
-		 b = 20;
-		int c = a + b;
-		return(c);
-	}
-	int sub() {
-		int a = 10, b = 20;
-		int c = a - b;
-		return(c);
-	}
-};
-int main() {
-	calculator obj1;
-	int res_add = obj1.add();
-	int res_sub = obj1.sub();
-	cout << res_add;
-	cout << res_sub;
+int main()
+{
+    char o, ch;
+    float num1, num2;
+    do
+    {
+        cout << "Enter operator either + or - or * or /: ";
+        cin >> o;
+        cout << "Enter two operands: ";
+        cin >> num1 >> num2;
+        switch (o)
+        {
+        case '+':
+            cout << num1 + num2;
+            break;
+        case '-':
+            cout << num1 - num2;
+            break;
+        case '*':
+            cout << num1 * num2;
+            break;
+        case '/':
+            cout << num1 / num2;
+            break;
+        default:
+            /* If operator is other than +, -, * or /, error message is shown */
+            cout << "Error! operator is not correct";
+            break;
+        }
+        cout << "\n\n do you want to Continue? (y or n)";
+        cin >> ch;
+    } while (ch != 'n' && ch != 'N');
+    return 0;
 }
