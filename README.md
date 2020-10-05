@@ -6,4 +6,5 @@ fibonacci series
 calculator 
 quadratic equation
 swapping
+linked list
 ```
