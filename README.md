@@ -7,4 +7,5 @@ calculator
 quadratic equation
 swapping
 linked list
+doubly linked list
 ```
